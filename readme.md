@@ -6,7 +6,3 @@
 - [ ] Clean up text for all messages.
 - [ ] Add end time to Send-BuildStopTaskMessage.
 - [ ] Change Send-BuildStopTaskMessage 'Time:' to 'Elapsed Time:'.
-
-
-[Icon Source](https://www.iconfinder.com/iconsets/ie_Glossy_button)
-
