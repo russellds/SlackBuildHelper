@@ -39,10 +39,10 @@ Foreach($import in @($Public + $Private))
     {
         #Import the config
         $SlackBuildHelper = $null
-        $SlackBuildHelper = Get-BuildHelperConfig -Source SlackBuildHelper.xml -ErrorAction Stop
+        $SlackBuildHelper = Get-SlackBuildHelperConfig -Source SlackBuildHelper.xml -ErrorAction Stop
 
     }
     Catch
     {
-        Write-Warning "Error importing BuildHelper config: $_"
+        Write-Warning "Error importing SlackBuildHelper config: $_"
     }
