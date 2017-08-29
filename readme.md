@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/29ai2f2mihgq9tg3/branch/master?svg=true)](https://ci.appveyor.com/project/russellds/SlackBuildHelper/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/jvpx669t481rru39?svg=true)](https://ci.appveyor.com/project/russellds/SlackBuildHelper/branch/master)
 
 # SlackBuildHelper
 
