@@ -76,7 +76,7 @@ function Get-NextNugetPackageCalendarVersion {
 
             if($Version.Major -ne $year)
             {
-                New-Object New-Object System.Version ($year,$month,0)
+                New-Object System.Version ($year,$month,0)
             }
             elseif($Version.Minor -ne $month)
             {
