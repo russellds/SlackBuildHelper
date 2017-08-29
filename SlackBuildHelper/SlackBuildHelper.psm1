@@ -16,21 +16,21 @@ Foreach($import in @($Public + $Private))
 }
 
 #Create / Read config
-    if(-not (Test-Path -Path "$PSScriptRoot\BuildHelper.xml" -ErrorAction SilentlyContinue))
+    if(-not (Test-Path -Path "$PSScriptRoot\SlackBuildHelper.xml" -ErrorAction SilentlyContinue))
     {
         Try
         {
-            Write-Warning "Did not find config file $PSScriptRoot\BuildHelper.xml, attempting to create"
+            Write-Warning "Did not find config file $PSScriptRoot\SlackBuildHelper.xml, attempting to create"
             [pscustomobject]@{
                 SlackChannel = $null
                 SlackIconUrl = $null
                 SlackBotUserName = $null
                 SlackNotifyList = $null
-            } | Export-Clixml -Path "$PSScriptRoot\BuildHelper.xml" -Force -ErrorAction Stop
+            } | Export-Clixml -Path "$PSScriptRoot\SlackBuildHelper.xml" -Force -ErrorAction Stop
         }
         Catch
         {
-            Write-Warning "Failed to create config file $PSScriptRoot\BuildHelper.xml: $_"
+            Write-Warning "Failed to create config file $PSScriptRoot\SlackBuildHelper.xml: $_"
         }
     }
 
@@ -38,8 +38,8 @@ Foreach($import in @($Public + $Private))
     Try
     {
         #Import the config
-        $BuildHelper = $null
-        $BuildHelper = Get-BuildHelperConfig -Source BuildHelper.xml -ErrorAction Stop
+        $SlackBuildHelper = $null
+        $SlackBuildHelper = Get-BuildHelperConfig -Source SlackBuildHelper.xml -ErrorAction Stop
 
     }
     Catch
