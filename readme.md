@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/29ai2f2mihgq9tg3/branch/master?svg=true)](https://ci.appveyor.com/project/russellds/SlackBuildHelper/branch/master)
+
 # SlackBuildHelper
 
 This PowerShell module is designed to make it easy to add Slack integration to build tools such as Invoke-Build and psake using [PSSlack](https://github.com/RamblingCookieMonster/PSSlack).
