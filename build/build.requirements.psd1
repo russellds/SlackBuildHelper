@@ -18,4 +18,7 @@
     'Pester' = @{
         DependencyType = 'PSGalleryNuget'
     }
+    'PSSlack' = @{
+        DependencyType = 'PSGalleryNuget'
+    }
 }
